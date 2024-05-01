@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { FaStar } from "react-icons/fa";
-import { FaArrowLeft } from "react-icons/fa6";
+import { FaStar, FaArrowLeft } from "react-icons/fa";
 import { Link, useParams } from "react-router-dom/cjs/react-router-dom.min";
-import Rating from "../components/UI/Rating";
-import Price from "../components/UI/Price";
 import Book from "../components/UI/Book";
+import Price from "../components/UI/Price";
+import Rating from "../components/UI/Rating";
 
 const BookInfo = ({ books, addToCart, cart }) => {
   const { id } = useParams();
