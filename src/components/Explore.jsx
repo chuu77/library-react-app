@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const Explore = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+  }, []);
   return (
     <section id="explore">
       <div className="container">
@@ -9,9 +13,11 @@ const Explore = () => {
             <h2>
               Explore more <span className="purple">Books</span>
             </h2>
-            <a href="/books">
-              <button className="btn">Explore Books</button>
-            </a>
+            <Link to="/books">
+              <button className="btn" type="button">
+                Explore Books
+              </button>
+            </Link>
           </div>
         </div>
       </div>
