@@ -18,12 +18,12 @@ const BookInfo = ({ books, addToCart, cart }) => {
   }
 
   return (
-    <div id="books__body">
+    <div className="" id="books__body">
       <main id="books__main">
         <div className="books__container">
           <div className="row">
             <div className="book__selected--top">
-              <Link to="/books/1" className="book__link">
+              <Link to="/" className="book__link">
                 <FaArrowLeft />
               </Link>
               <Link to="/books">
@@ -58,6 +58,7 @@ const BookInfo = ({ books, addToCart, cart }) => {
                     nulla. Delectus deleniti labore veritatis. Beatae, impedit?
                   </p>
                 </div>
+
                 {bookExistsOnCart() ? (
                   <Link to={`/cart`} className="book__link">
                     <button className="btn">Checkout</button>
